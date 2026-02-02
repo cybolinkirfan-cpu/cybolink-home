@@ -141,6 +141,8 @@ body {
   }
 }
 
+
+/* showcase */
 .showcase-section {
   position: relative;
   width: 100%;
@@ -1271,7 +1273,122 @@ body {
 }
 
 
-/* ================= RESPONSIVE ================= */
+
+/* =========================================
+   MOBILE RESPONSIVENESS (Max-width: 991px)
+   ========================================= */
+@media screen and (max-width: 991px) {
+
+  /* --- Navbar  --- */
+  .nav-inner {
+    display: none;
+  }
+
+  .navbar-wrapper {
+    top: 20px;
+  }
+
+  .navbar-wrapper .d-flex {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .navbar-wrapper img[alt="cybo-logo"] {
+    width: 130px;
+  }
+
+  .btn-menu {
+    width: 45px;
+    height: 45px;
+    margin-right: 0 !important;
+  }
+
+  /* --- Hero Section  --- */
+
+  .video-pin,
+  .hero-video {
+    height: 100vh;
+    height: 100svh;
+  }
+
+  /* --- Logo Carousel --- */
+
+  .icon-carousel-container {
+    width: 90%;
+    max-width: 100%;
+    bottom: 25px;
+  }
+
+  /* Scale down the partner logos */
+  .slide img {
+    height: 35px;
+    opacity: 1;
+    filter: grayscale(0%) brightness(1);
+  }
+
+  /* --- Showcase Section --- */
+  .showcase-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: auto;
+  }
+
+  /* Reduce the size of the central hand */
+  .central-hand {
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .portfolio-items, 
+    .phone-left, 
+    .tv-frame-2,
+    .item {
+        display: none !important;
+    }
+
+
+  /* --- Approach Section --- */
+  .approach-section {
+    padding: 60px 20px;
+  }
+
+  .approach-content h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  /* Stats: Stack them 1-by-1 or 2-by-1 */
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .stat h3 {
+    font-size: 32px;
+  }
+
+  .team-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px !important;
+  }
+
+  .team-images img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .phone-left,
+  .tv-frame-2 {
+    display: none;
+  }
+
+}
+
+
 
 /* --- Responsive Design --- */
 @media (max-width: 992px) {
